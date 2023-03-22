@@ -1,0 +1,272 @@
+.specials {
+  background-color: #1F1C1D
+}
+
+.specials__wrapper {
+  @include container;
+  padding: 40px 40px 115px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 46px;
+    padding-bottom: 84px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 6px;
+    padding-bottom: 255px;
+  }
+}
+
+.specials__header {
+  @include section-header;
+  margin-bottom: 21px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.specials__subtitle {
+  @include section-subtitle;
+
+  margin: 0 auto;
+  margin-bottom: 36px;
+  max-width: 735px;
+
+  font-weight: 300;
+
+  @media (max-width: $tablet-width) {
+    max-width: 440px;
+    margin-bottom: 74px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 41px;
+    transform: translateX(6px);
+  }
+}
+
+.specials__photo-wrapper {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.specials__photo-wrapper::before {
+  position: absolute;
+  content: "";
+
+  width: 519px;
+  height: 519px;
+  background-color: #151313;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+
+  @media (max-width: $tablet-width) {
+    width: 342px;
+    height: 349px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+.specials__photo-wrapper::after {
+  position: absolute;
+  content: "";
+  width: 631px;
+  height: 631px;
+  border-radius: 50%;
+  border: 1px solid #A07B50;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  z-index: -1;
+
+  @media (max-width: $tablet-width) {
+    width: 416px;
+    height: 424px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.specials__list {
+  @include list-zero;
+  position: relative;
+  width: 320px;
+  height: 0;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 25px;
+    width: 300px;
+  }
+}
+
+.specials__item {
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: end;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    text-align: start;
+    max-width: 250px;
+    padding-left: 17px;
+  }
+}
+
+.specials__item::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #A07B50;
+
+  @media (max-width: $tablet-width) {
+    width: 10px;
+    height: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.specials__item:not(:last-child) {
+  @media (max-width: $mobile-width) {
+    padding-bottom: 18px;
+  }
+}
+
+.specials__item--friendly {
+  max-width: 250px;
+  top: -480px;
+  left: -400px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 170px;
+    top: -320px;
+    left: -227px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 255px;
+  }
+}
+
+.specials__item--friendly::before {
+  right: -30px;
+  top: 10px;
+}
+
+.specials__item--trained {
+  max-width: 210px;
+  top: -480px;
+  right: -486px;
+  text-align: start;
+
+  @media (max-width: $tablet-width) {
+    max-width: 130px;
+    top: -350px;
+    right: -388px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 255px;
+  }
+}
+
+.specials__item--trained::before {
+  left: -30px;
+  top: 10px;
+}
+
+.specials__item--size {
+  max-width: 150px;
+  top: -270px;
+  right: -451px;
+  text-align: start;
+
+  @media (max-width: $tablet-width) {
+    max-width: 100px;
+    top: -270px;
+    right: -361px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 255px;
+  }
+}
+
+.specials__item--size::before {
+  left: -30px;
+  top: 10px;
+}
+
+.specials__item--bobcat {
+  max-width: 200px;
+  top: -320px;
+  left: -336px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 150px;
+    top: -320px;
+    left: -182px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 200px;
+  }
+}
+
+.specials__item--bobcat::before {
+  right: -30px;
+  top: 10px;
+}
+
+.specials__item--friendly,
+.specials__item--trained,
+.specials__item--size,
+.specials__item--bobcat {
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+
+    top: unset;
+    right: unset;
+    left: unset;
+    bottom: unset;
+  }
+}
+
+.specials__item--friendly::before,
+.specials__item--trained::before,
+.specials__item--size::before,
+.specials__item--bobcat::before {
+
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    top: 7px;
+    left: 0px;
+  }
+}

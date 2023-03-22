@@ -1,0 +1,161 @@
+.benefits {
+  background-color: #151313;
+}
+
+.benefits__wrapper {
+  @include container;
+  padding-top: 83px;
+  padding-bottom: 99px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 85px;
+    padding-bottom: 101px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 53px;
+    padding-bottom: 60px;
+  }
+}
+
+.benefits__header {
+  @include section-header;
+
+  @media (max-width: $mobile-width) {
+    max-width: 230px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+}
+
+.benefits__subtitle {
+  @include section-subtitle;
+
+  @media (max-width: $mobile-width) {
+    width: 285px;
+  }
+}
+
+.benefits__list {
+  @include list-zero;
+  margin: 0 auto;
+  width: 95%;
+  padding-top: 47px;
+
+  display: grid;
+  column-gap: 2.22%;
+  grid-template-columns: repeat(3, 33.3333%);
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    padding-top: 58px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 35px;
+    width: 100%;
+  }
+}
+
+.benefits__item {
+  min-height: 301px;
+  padding: 44px 0 21px;
+  box-sizing: border-box;
+  text-align: center;
+
+  background-color: #1f1c1d;
+  border: 20px solid #1F1C1D;
+  border-top: 17px solid #1F1C1D;
+  border-bottom: 17px solid #1F1C1D;
+  transition: background-color 0.3s ease-out;
+
+  @media (max-width: $tablet-width) {
+    width: fit-content;
+    margin: 0 auto;
+    min-height: 306px;
+    padding: 44px 35px 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 36px;
+    min-height: 248px;
+  }
+}
+
+.benefits__item:hover {
+  background-color: #A07B50;
+  border: 20px solid #1F1C1D;
+  border-top: 17px solid #1F1C1D;
+  border-bottom: 17px solid #1F1C1D;
+
+
+  .benefits__item-icon {
+    color: #FFFFFF;
+  }
+}
+
+.benefits__item:not(:last-child) {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.benefits__link {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #A07B50;
+  text-decoration: none;
+
+  @media (max-width: $tablet-width) {
+    min-height: 200px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 150px;
+  }
+}
+
+.benefits__item-icon {
+  align-self: center;
+  transition: color 0.3s ease-out;
+}
+
+.benefits__item-icon--vet {
+  @media (max-width: $mobile-width) {
+    width: 80px;
+    height: 88px;
+  }
+}
+
+.benefits__item-icon--consalting {
+  @media (max-width: $mobile-width) {
+    width: 80px;
+    height: 71px;
+  }
+}
+
+.benefits__item-icon--nutrition {
+  @media (max-width: $mobile-width) {
+    width: 57px;
+    height: 88px;
+  }
+}
+
+
+.benefits__item-text {
+  max-width: 250px;
+  margin: 0 auto;
+  font-weight: 300;
+  color: #FFFFFF;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
