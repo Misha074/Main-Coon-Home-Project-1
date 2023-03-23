@@ -1,0 +1,269 @@
+.team {
+  background-color: #151313;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    position: unset;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+  }
+
+}
+
+.team__wrapper {
+  @include container;
+  padding: 83px 66px 72px 93px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 75px;
+    padding-bottom: 94px;
+    position: relative;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 54px;
+    padding-bottom: 60px;
+    position: unset;
+  }
+}
+
+.team__header {
+  @include section-header;
+}
+
+.team__subtitle {
+  @include section-subtitle;
+  max-width: 510px;
+  margin-bottom: 22px;
+
+  br {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 575px;
+    margin-bottom: 29px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    margin-bottom: 33px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+.team__photo {
+  z-index: 2;
+  margin-right: -55px;
+  margin-top: -2px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    left: 360px;
+    bottom: -100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 126px;
+    height: 126px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -57px;
+    right: unset;
+    bottom: unset;
+  }
+}
+
+.team__info {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 71px 109px 73px 121px;
+  background-color: #1f1c1d;
+  border: 23px solid #151313;
+  border-right: 34px solid #151313;
+  outline: 1px solid #a07b50;
+
+  @media (max-width: $tablet-width) {
+    min-width: unset;
+    width: 100%;
+    padding: 70px 92px 76px 104px;
+    border-right: 27px solid #151313;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 290px;
+    padding: 0;
+    padding-top: 88px;
+    padding-bottom: 16px;
+    border: none;
+    outline: none;
+
+    text-align: center;
+  }
+}
+
+.team__name {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+
+  @media (max-width: $mobile-width) {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 3px;
+  }
+}
+
+.team__function {
+  margin: 0;
+  margin-bottom: 22px;
+  line-height: 22px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 16px;
+  }
+}
+
+.team__quote {
+  display: block;
+  max-width: 400px;
+  margin-bottom: 47px;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 300;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+.team__quote::before,
+.team__quote::after {
+  @include visually-hidden;
+}
+
+.team__social-list {
+  @include list-zero;
+
+  display: flex;
+  gap: 7px;
+
+  @media (max-width: $mobile-width) {
+    width: fit-content;
+    margin: 0 auto;
+    gap: 15px;
+  }
+}
+
+.team__social-link {
+  color: #FFFFFF;
+  @include element-hover-transition;
+}
+
+.team__social-link:hover {
+  color: #A07B50;
+}
+
+.team__social-link-span {
+  @include visually-hidden;
+}
+
+.team__social-icon {
+  display: block;
+}
+
+.team__social-icon--facebook {
+  width: 7px;
+  height: 14px;
+
+  @media (max-width: $mobile-width) {
+    width: 5px;
+    height: 12px;
+  }
+}
+
+
+.team__social-icon--twitter {
+  width: 20px;
+  height: 14px;
+
+  @media (max-width: $mobile-width) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.team__social-icon--vk {
+  width: 30px;
+  height: 13px;
+
+  @media (max-width: $mobile-width) {
+    width: 18px;
+    height: 12px;
+  }
+}
+
+.team__slider-button {
+  @include button-zero;
+  height: fit-content;
+  color: #A07B50;
+  font-size: 0;
+}
+
+.team__slider-button:hover {
+  color: #FFFFFF;
+}
+
+.team__slider-button--prev {
+  position: absolute;
+  top: 50%;
+  left: 90px;
+
+  @media (max-width: $tablet-width) {
+    left: 47%;
+    top: unset;
+    bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: unset;
+    top: 40.5%;
+    left: 20%;
+  }
+}
+
+.team__slider-button--next {
+  position: absolute;
+  top: 50%;
+  right: 90px;
+  rotate: 180deg;
+
+  @media (max-width: $tablet-width) {
+    right: 11%;
+    top: unset;
+    bottom: 108px;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: unset;
+    top: 39.4%;
+    left: 65%;
+  }
+}
