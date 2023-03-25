@@ -41,4 +41,3 @@ document.querySelectorAll('.faq-item').forEach((el) => {
     }
   })
 })
-

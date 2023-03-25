@@ -1,6 +1,6 @@
 .reviews {
   position: relative;
-  background-color: #1F1C1D;
+  background-color: #1f1c1d;
 }
 
 .reviews__wrapper {
@@ -70,7 +70,7 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: $tablet-width) {
     margin-top: 39px;
@@ -137,22 +137,24 @@
 }
 
 .reviews__social-item {
-  padding: 3px 4px 0px 4px;
+  padding: 3px 4px 0 4px;
   border: 0.5px solid rgba(160, 123, 80, 0.27);
+
   @include element-hover-transition;
 }
 
 .reviews__social-item:hover {
-  border: 0.5px solid #FFFFFF;
+  border: 0.5px solid #ffffff;
 
   .reviews__social-link {
-    color: #FFFFFF;
+    color: #ffffff;
+
     @include element-hover-transition;
   }
 }
 
 .reviews__social-link {
-  color: #A07B50;
+  color: #a07b50;
 }
 
 .reviews__social-link-span {

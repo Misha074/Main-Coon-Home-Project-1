@@ -168,7 +168,3 @@ buttonKittens.addEventListener('click', showKittensBlock);
 
 hideFemaleAndKittensBlock();
 init();
-
-
-
-

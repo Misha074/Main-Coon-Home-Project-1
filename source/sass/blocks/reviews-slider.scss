@@ -33,12 +33,12 @@
 .reviews__slider-button {
   @include button-zero;
   height: fit-content;
-  color: #A07B50;
+  color: #a07b50;
   font-size: 0;
 }
 
 .reviews__slider-button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .reviews__slider-button--prev {

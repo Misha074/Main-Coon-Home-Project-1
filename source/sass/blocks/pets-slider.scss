@@ -72,7 +72,7 @@
 }
 
 .pets-slider-button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .pets-slider-button--prev {
@@ -81,10 +81,6 @@
   @media (max-width: $tablet-width) {
     display: block;
     top: 50%;
-  }
-
-  @media (max-width: $mobile-width) {
-
   }
 }
 
@@ -97,9 +93,4 @@
     right: 0;
     transform: rotate(180deg);
   }
-
-  @media (max-width: $mobile-width) {
-
-  }
 }
-

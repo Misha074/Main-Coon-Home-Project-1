@@ -1,27 +1,27 @@
 .care {
-  background-color: #1F1C1D;
-  background-image: url(/img/care-background-desktop@1x.webp);
+  background-color: #1f1c1d;
+  background-image: url("/img/care-background-desktop@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(/img/care-background-desktop@2x.webp);
+    background-image: url("/img/care-background-desktop@2x.webp");
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url(/img/care-background-tablet@2x.webp);
+    background-image: url("/img/care-background-tablet@2x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url(/img/care-background-tablet@2x.webp);
+      background-image: url("/img/care-background-tablet@2x.webp");
     }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url(/img/care-background-mobile@2x.webp);
+    background-image: url("/img/care-background-mobile@2x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url(/img/care-background-mobile@2x.webp);
+      background-image: url("/img/care-background-mobile@2x.webp");
     }
   }
 }
@@ -84,8 +84,8 @@
 
   @media (max-width: $mobile-width) {
     padding: 0;
-    column-gap: 0px;
-    row-gap: 0px;
+    column-gap: 0;
+    row-gap: 0;
     width: 100%;
   }
 }
@@ -96,7 +96,7 @@
   display: flex;
   justify-content: space-between;
 
-  border: 0.5px solid #A07B50;
+  border: 0.5px solid #a07b50;
   background-color: rgba(0, 0, 0, 0.3);
 
   @media (max-width: $tablet-width) {
@@ -126,7 +126,6 @@
 }
 
 .care__item--claws {
-
   br {
     display: none;
   }
@@ -140,7 +139,6 @@
       display: block;
     }
   }
-
 }
 
 .care__item--ears {
@@ -153,6 +151,7 @@
   br {
     display: none;
   }
+
   @media (max-width: $tablet-width) {
     order: 4;
   }
@@ -165,7 +164,7 @@
 }
 
 .care__item-info {
-  padding: 38px 0px 0px 59px;
+  padding: 38px 0 0 59px;
 
   @media (max-width: $tablet-width) {
     padding: 38px 0 28px 48px;
@@ -195,7 +194,7 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 23px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: $mobile-width) {
     line-height: 20px;
@@ -207,10 +206,10 @@
   display: flex;
   align-items: center;
   width: 58px;
-  background-color: #A07B50;
+  background-color: #a07b50;
   transition: background-color 0.3s ease-out;
   cursor: pointer;
-  border-left: 1px solid #A07B50;
+  border-left: 1px solid #a07b50;
 
   @media (max-width: $mobile-width) {
     width: 46px;
