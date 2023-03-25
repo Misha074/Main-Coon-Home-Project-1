@@ -1,5 +1,5 @@
 .pets {
-  background-color: #1F1C1D;
+  background-color: #1f1c1d;
 }
 
 .pets__wrapper {
@@ -58,7 +58,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 0px 24px;
+    padding: 0 24px;
     margin-bottom: 40px;
     justify-content: space-between;
     column-gap: 46px;
@@ -68,7 +68,7 @@
 .pets__button {
   @include button-zero;
 
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.5;
   transition: opacity 0.3s ease-out;
 
@@ -84,18 +84,17 @@
   }
 }
 
-
 .pets__button:hover {
   opacity: 1;
 }
 
 .pets__button--active {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 
 .pets__button--active:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 
@@ -110,10 +109,10 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 
-  border: 0.5px solid #A07B50;
+  border: 0.5px solid #a07b50;
 
   @media (max-width: $mobile-width) {
     padding: 12px 19px;
@@ -123,9 +122,8 @@
 }
 
 .pets__more-link:hover {
-  color: #A07B50;
-  border-color: #FFFFFF;
+  color: #a07b50;
+  border-color: #ffffff;
+
   @include element-hover-transition;
 }
-
-

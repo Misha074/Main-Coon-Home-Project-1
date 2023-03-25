@@ -44,7 +44,7 @@
 
   display: grid;
   column-gap: 2.22%;
-  grid-template-columns: repeat(3, 33.3333%);
+  grid-template-columns: repeat(3, 33.33%);
 
   @media (max-width: $tablet-width) {
     display: block;
@@ -64,9 +64,9 @@
   text-align: center;
 
   background-color: #1f1c1d;
-  border: 20px solid #1F1C1D;
-  border-top: 17px solid #1F1C1D;
-  border-bottom: 17px solid #1F1C1D;
+  border: 20px solid #1f1c1d;
+  border-top: 17px solid #1f1c1d;
+  border-bottom: 17px solid #1f1c1d;
   transition: background-color 0.3s ease-out;
 
   @media (max-width: $tablet-width) {
@@ -83,14 +83,14 @@
 }
 
 .benefits__item:hover {
-  background-color: #A07B50;
-  border: 20px solid #1F1C1D;
-  border-top: 17px solid #1F1C1D;
-  border-bottom: 17px solid #1F1C1D;
+  background-color: #a07b50;
+  border: 20px solid #1f1c1d;
+  border-top: 17px solid #1f1c1d;
+  border-bottom: 17px solid #1f1c1d;
 
 
   .benefits__item-icon {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -109,7 +109,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #A07B50;
+  color: #a07b50;
   text-decoration: none;
 
   @media (max-width: $tablet-width) {
@@ -152,7 +152,7 @@
   max-width: 250px;
   margin: 0 auto;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (max-width: $mobile-width) {
     font-size: 14px;

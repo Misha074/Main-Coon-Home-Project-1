@@ -1,5 +1,5 @@
 .specials {
-  background-color: #1F1C1D
+  background-color: #1f1c1d;
 }
 
 .specials__wrapper {
@@ -82,7 +82,7 @@
   width: 631px;
   height: 631px;
   border-radius: 50%;
-  border: 1px solid #A07B50;
+  border: 1px solid #a07b50;
   right: 50%;
   top: 50%;
   transform: translate(50%, -50%);
@@ -113,7 +113,7 @@
 }
 
 .specials__item {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
@@ -139,7 +139,7 @@
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #A07B50;
+  background-color: #a07b50;
 
   @media (max-width: $tablet-width) {
     width: 10px;
@@ -248,7 +248,6 @@
 .specials__item--trained,
 .specials__item--size,
 .specials__item--bobcat {
-
   @media (max-width: $mobile-width) {
     position: relative;
 
@@ -263,10 +262,9 @@
 .specials__item--trained::before,
 .specials__item--size::before,
 .specials__item--bobcat::before {
-
   @media (max-width: $mobile-width) {
     position: absolute;
     top: 7px;
-    left: 0px;
+    left: 0;
   }
 }

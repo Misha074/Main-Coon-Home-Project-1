@@ -28,7 +28,8 @@
 }
 
 .footer__logo-link {
-  color: #A07B50;
+  color: #a07b50;
+
   @include element-hover-transition;
 
   @media (max-width: $tablet-width) {
@@ -43,7 +44,7 @@
 }
 
 .footer__logo-link:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__logo-span {
@@ -53,9 +54,10 @@
 .footer__address {
   font-size: 14px;
   line-height: 27px;
-  color: #FDF2E6D4;
+  color: #fdf2e6d4;
   text-decoration: none;
   transform: translateX(25px);
+
   @include element-hover-transition;
 
   @media (max-width: $mobile-width) {
@@ -68,7 +70,7 @@
 }
 
 .footer__address:hover {
-  color: #A07B50;
+  color: #a07b50;
 }
 
 
@@ -86,12 +88,13 @@
 }
 
 .footer__social-link {
-  color: #A07B50;
+  color: #a07b50;
+
   @include element-hover-transition;
 }
 
 .footer__social-link:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__social-link-span {
@@ -128,15 +131,14 @@
   }
 }
 
-
-
 .footer__phone {
   font-size: 14px;
   line-height: 27px;
-  color: #FDF2E6D4;
+  color: #fdf2e6d4;
   font-weight: 700;
   text-decoration: none;
   transform: translateX(-32px);
+
   @include element-hover-transition;
 
   @media (max-width: $tablet-width) {
@@ -152,5 +154,5 @@
 }
 
 .footer__phone:hover {
-  color: #A07B50;
+  color: #a07b50;
 }

@@ -5,6 +5,7 @@
 .faq-item__header {
   display: flex;
   justify-content: space-between;
+  border-bottom: 0.5px solid rgba(160, 123, 80, 0.41);
 }
 
 .faq-item__title {
@@ -13,7 +14,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
-  color: #DDD0C3;
+  color: #ddd0c3;
 
   @media (max-width: $tablet-width) {
     padding: 22px 30px 15px 29px;
@@ -28,7 +29,7 @@
 }
 
 .faq-item__text-wrapper {
-  max-height: 0px;
+  max-height: 0;
   overflow: hidden;
   transition: 0.5s ease-out;
 }
@@ -38,19 +39,20 @@
   font-size: 16px;
   line-height: 25px;
   font-weight: 300;
-  color: #DDD0C3;
+  color: #ddd0c3;
+
   p {
     margin: 0;
   }
 
-  p+p {
+  p + p {
     margin-top: 15px;
   }
 
   @media (max-width: $tablet-width) {
     padding: 22px 142px 23px 30px;
 
-    p+p {
+    p + p {
       margin-top: 23px;
     }
   }
@@ -60,24 +62,19 @@
     font-size: 14px;
     line-height: 19.7px;
 
-    p+p {
+    p + p {
       margin-top: 9px;
     }
   }
-}
-
-
-.faq-item__header {
-  border-bottom: 0.5px solid rgba(160, 123, 80, 0.41);
 }
 
 .faq-item__button {
   @include list-zero;
   width: 104px;
   height: 111px;
-  background-color: #A07B50;
+  background-color: #a07b50;
   font-size: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: background-color 0.3s ease-out;
 
   @media (max-width: $tablet-width) {
@@ -94,5 +91,3 @@
 .faq-item__button:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
-

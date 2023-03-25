@@ -40,5 +40,3 @@ femaleButton.addEventListener('click', () => {
 });
 
 hideFemale();
-
-

@@ -9,7 +9,6 @@
   @media (max-width: $mobile-width) {
     position: relative;
   }
-
 }
 
 .team__wrapper {
@@ -173,12 +172,13 @@
 }
 
 .team__social-link {
-  color: #FFFFFF;
+  color: #ffffff;
+
   @include element-hover-transition;
 }
 
 .team__social-link:hover {
-  color: #A07B50;
+  color: #a07b50;
 }
 
 .team__social-link-span {
@@ -223,12 +223,12 @@
 .team__slider-button {
   @include button-zero;
   height: fit-content;
-  color: #A07B50;
+  color: #a07b50;
   font-size: 0;
 }
 
 .team__slider-button:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .team__slider-button--prev {
