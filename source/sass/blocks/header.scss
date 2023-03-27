@@ -1,6 +1,7 @@
 .header {
   min-height: 684px;
   max-width: 1366px;
+  width: 100%;
   margin: 0 auto;
 
   background-image: url("/img/header-background-desktop@1x.webp");
@@ -42,7 +43,6 @@
   padding: 0 200px;
 
   @media (max-width: $tablet-width) {
-    // max-width: 718px;
     margin: 0 auto;
     padding: 0 25px;
   }
