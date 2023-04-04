@@ -14,28 +14,26 @@ function init() {
 
 window.addEventListener('resize', init);
 
-document.querySelector('.reviews__slider-button--next').addEventListener('click', function () {
+document.querySelector('.reviews-slider__button--next').addEventListener('click', function () {
   count++;
 
   if (count >= slides.length) {
     count = 0;
     rollslider();
   }
-  else {
-    rollslider();
-  }
+
+  rollslider();
 })
 
-document.querySelector('.reviews__slider-button--prev').addEventListener('click', function () {
+document.querySelector('.reviews-slider__button--prev').addEventListener('click', function () {
   count--;
 
   if (count < 0) {
     count = slides.length - 1;
     rollslider();
   }
-  else {
-    rollslider();
-  }
+
+  rollslider();
 })
 
 function rollslider() {

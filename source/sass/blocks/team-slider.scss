@@ -40,3 +40,51 @@
     position: relative;
   }
 }
+
+.team-slider__button {
+  @include button-zero;
+  height: fit-content;
+  color: #a07b50;
+  font-size: 0;
+}
+
+.team-slider__button:hover {
+  color: #ffffff;
+}
+
+.team-slider__button--prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  @media (max-width: $tablet-width) {
+    left: 47%;
+    top: unset;
+    bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: unset;
+    top: 13.5%;
+    left: 0%;
+  }
+}
+
+.team-slider__button--next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  rotate: 180deg;
+
+  @media (max-width: $tablet-width) {
+    right: 11%;
+    top: unset;
+    bottom: 108px;
+  }
+
+  @media (max-width: $mobile-width) {
+    bottom: unset;
+    top: 10.4%;
+    right: 0%;
+  }
+}

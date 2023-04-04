@@ -83,14 +83,14 @@
           Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной
         </p>
         <div class="pets__content">
-          <div class="pets__buttons">
-            <button class="pets__button pets__button--male pets__button--active">Коты</button>
-            <button class="pets__button pets__button--female">Кошки</button>
-            <button class="pets__button pets__button--kittens">Котята</button>
+          <div class="pets__tabs">
+            <button class="pets__tab pets__tab--active" data-tab-name="tab-male">Коты</button>
+            <button class="pets__tab" data-tab-name="tab-female">Кошки</button>
+            <button class="pets__tab" data-tab-name="tab-kittens">Котята</button>
           </div>
           <div class="pets__slider pets-slider">
             <div class="pets-slider__line">
-              <div class="pets-slider__block pets-slider__block--male pets-slider__block--active">
+              <div class="pets-slider__block tab-male pets-slider__block--active">
                 <div class="pets-slider__slide">
                   <picture>
                     <source media="(min-width: 1366px)" srcset="./img/pets-1@1x.webp, img/pets-1@2x.webp 2x">
@@ -128,7 +128,7 @@
                 </div>
               </div>
 
-              <div class="pets-slider__block pets-slider__block--female">
+              <div class="pets-slider__block tab-female">
                 <div class="pets-slider__slide">
                   <img class="pets-slider__photo-img" src="./img/femcat-1.webp" width="520" height="220"
                     alt="Белая пушистая Мейн-Куниха" loading="lazy">
@@ -147,7 +147,7 @@
                 </div>
               </div>
 
-              <div class="pets-slider__block pets-slider__block--kittens">
+              <div class="pets-slider__block tab-kittens">
                 <div class="pets-slider__slide">
                   <img class="pets-slider__photo-img" src="./img/kitten-1.webp" width="520" height="220"
                     alt="Серый котёнок" loading="lazy">
@@ -185,7 +185,6 @@
       </div>
 
     </section>
-
     <section class="specials">
       <div class="specials__wrapper">
         <h2 class="specials__header">Особенности породы</h2>
@@ -333,9 +332,9 @@
         <h2 class="team__header">Наша команда</h2>
         <p class="team__subtitle">Все сотрудники нашего питомника дипломированые специалисты<br>
           в области фелинологии и ветеринарии</p>
-        <div class="team__slider team-slider">
-          <div class="team-slider__line">
-            <div class="team-slider__slide">
+        <div class="team__slider team-slider slider">
+          <div class="team-slider__line slider-line">
+            <div class="team-slider__slide slide">
               <picture>
                 <source media="(min-width: 1366px)" srcset="./img/team-1-desktop@1x.webp, img/team-1-desktop@2x.webp 2x"
                   width="360" height="356">
@@ -383,7 +382,7 @@
               </div>
             </div>
 
-            <div class="team-slider__slide">
+            <div class="team-slider__slide slide">
               <picture>
                 <source media="(min-width: 1366px)" srcset="./img/team-1-desktop@1x.webp, img/team-1-desktop@2x.webp 2x"
                   width="360" height="356">
@@ -430,7 +429,7 @@
               </div>
             </div>
 
-            <div class="team-slider__slide">
+            <div class="team-slider__slide slide">
               <picture>
                 <source media="(min-width: 1366px)" srcset="./img/team-1-desktop@1x.webp, img/team-1-desktop@2x.webp 2x"
                   width="360" height="356">
@@ -477,17 +476,17 @@
               </div>
             </div>
           </div>
+          <button class="team-slider__button team-slider__button--prev slider-button--prev">Предыдущий слайд
+            <svg width="12" height="30" viewBox="0 0 12 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
+          <button class="team-slider__button team-slider__button--next slider-button--next">Предыдущий слайд
+            <svg width="12" height="30" viewBox="0 0 12 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
         </div>
-        <button class="team__slider-button team__slider-button--prev">Предыдущий слайд
-          <svg width="12" height="30" viewBox="0 0 12 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#arrow-left"></use>
-          </svg>
-        </button>
-        <button class="team__slider-button team__slider-button--next">Предыдущий слайд
-          <svg width="12" height="30" viewBox="0 0 12 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#arrow-left"></use>
-          </svg>
-        </button>
       </div>
     </section>
     <section class="faq">
@@ -571,10 +570,9 @@
     <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__header">Отзывы</h2>
-        <div class="reviews__slider reviews-slider">
-          <div class="reviews-slider__line">
-
-            <div class="reviews-slider__slide">
+        <div class="reviews__slider reviews-slider slider">
+          <div class="reviews-slider__line slider-line">
+            <div class="reviews-slider__slide slide">
               <picture>
                 <source media="(min-width: 1366px)"
                   srcset="./img/review-1-desktop@1x.webp, img/review-1-desktop@2x.webp 2x" width="481" height="331">
@@ -613,11 +611,10 @@
                     </li>
                   </ul>
                 </div>
-
               </div>
             </div>
 
-            <div class="reviews-slider__slide">
+            <div class="reviews-slider__slide slide">
               <picture>
                 <source media="(min-width: 1366px)"
                   srcset="./img/review-1-desktop@1x.webp, img/review-1-desktop@2x.webp 2x" width="481" height="331">
@@ -660,7 +657,7 @@
               </div>
             </div>
 
-            <div class="reviews-slider__slide">
+            <div class="reviews-slider__slide slide">
               <picture>
                 <source media="(min-width: 1366px)"
                   srcset="./img/review-1-desktop@1x.webp, img/review-1-desktop@2x.webp 2x" width="481" height="331">
@@ -701,22 +698,21 @@
               </div>
             </div>
           </div>
+          <button class="reviews-slider__button reviews-slider__button--prev slider-button--prev">Предыдущий слайд
+            <svg width="12" height="30" viewBox="0 0 12 30" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
+          <button class="reviews-slider__button reviews-slider__button--next slider-button--next">Предыдущий слайд
+            <svg width="12" height="30" viewBox="0 0 12 30" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
         </div>
-        <button class="reviews__slider-button reviews__slider-button--prev">Предыдущий слайд
-          <svg class="reviews__slider-button-icon" width="12" height="30" viewBox="0 0 12 30" fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#arrow-left"></use>
-          </svg>
-        </button>
-        <button class="reviews__slider-button reviews__slider-button--next">Предыдущий слайд
-          <svg class="reviews__slider-button-icon" width="12" height="30" viewBox="0 0 12 30" fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#arrow-left"></use>
-          </svg>
-        </button>
       </div>
     </section>
-
   </main>
   <footer class="page__footer">
     <div class="footer">

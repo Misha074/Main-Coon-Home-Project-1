@@ -82,6 +82,7 @@
 .team__info {
   width: 60%;
   box-sizing: border-box;
+  margin: 1px 0;
   padding: 71px 109px 73px 121px;
   background-color: #1f1c1d;
   border: 23px solid #151313;
@@ -217,53 +218,5 @@
   @media (max-width: $mobile-width) {
     width: 18px;
     height: 12px;
-  }
-}
-
-.team__slider-button {
-  @include button-zero;
-  height: fit-content;
-  color: #a07b50;
-  font-size: 0;
-}
-
-.team__slider-button:hover {
-  color: #ffffff;
-}
-
-.team__slider-button--prev {
-  position: absolute;
-  top: 50%;
-  left: 90px;
-
-  @media (max-width: $tablet-width) {
-    left: 47%;
-    top: unset;
-    bottom: 100px;
-  }
-
-  @media (max-width: $mobile-width) {
-    bottom: unset;
-    top: 40.5%;
-    left: 20%;
-  }
-}
-
-.team__slider-button--next {
-  position: absolute;
-  top: 50%;
-  right: 90px;
-  rotate: 180deg;
-
-  @media (max-width: $tablet-width) {
-    right: 11%;
-    top: unset;
-    bottom: 108px;
-  }
-
-  @media (max-width: $mobile-width) {
-    bottom: unset;
-    top: 39.4%;
-    left: 65%;
   }
 }
