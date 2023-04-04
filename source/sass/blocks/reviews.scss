@@ -5,7 +5,7 @@
 
 .reviews__wrapper {
   @include container;
-  padding: 40px 40px 112px 40px;
+  padding: 40px 0 112px;
 
   @media (max-width: $tablet-width) {
     padding-top: 37px;

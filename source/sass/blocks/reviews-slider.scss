@@ -2,11 +2,11 @@
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
+  position: relative;
 
   @media (max-width: $tablet-width) {
     padding-top: 96px;
     padding-bottom: 10px;
-    position: relative;
   }
 
   @media (max-width: $mobile-width) {
@@ -24,46 +24,55 @@
 .reviews-slider__slide {
   display: flex;
   position: relative;
+  padding: 0 96px 0px 43px;
+  box-sizing: border-box;
 
   @media (max-width: $mobile-width) {
     min-width: unset;
+    padding: 0;
   }
 }
 
-.reviews__slider-button {
+.reviews-slider__button {
   @include button-zero;
   height: fit-content;
   color: #a07b50;
   font-size: 0;
 }
 
-.reviews__slider-button:hover {
+.reviews-slider__button:hover {
   color: #ffffff;
 }
 
-.reviews__slider-button--prev {
+.reviews-slider__button--prev {
   position: absolute;
   top: 50%;
-  left: 90px;
+  left: 0px;
+
+  @media (max-width: $tablet-width) {
+    top: 25%;
+    left: 130px;
+  }
 
   @media (max-width: $mobile-width) {
-    top: 28.5%;
-    left: 6%;
+    top: 17%;
+    left: 0%;
   }
 }
 
-.reviews__slider-button--next {
+.reviews-slider__button--next {
   position: absolute;
   top: 50%;
-  right: 90px;
+  right: 53px;
   rotate: 180deg;
 
   @media (max-width: $tablet-width) {
-    top: 48%;
+    top: 25%;
+    right: 130px;
   }
 
   @media (max-width: $mobile-width) {
-    top: 27%;
-    right: 6%;
+    top: 15%;
+    right: 0%;
   }
 }

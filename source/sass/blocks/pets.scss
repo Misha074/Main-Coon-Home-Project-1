@@ -46,7 +46,7 @@
   overflow: hidden;
 }
 
-.pets__buttons {
+.pets__tabs {
   margin-bottom: 46px;
   padding-left: 14px;
   display: flex;
@@ -65,7 +65,7 @@
   }
 }
 
-.pets__button {
+.pets__tab {
   @include button-zero;
 
   color: #ffffff;
@@ -84,16 +84,16 @@
   }
 }
 
-.pets__button:hover {
+.pets__tab:hover {
   opacity: 1;
 }
 
-.pets__button--active {
+.pets__tab--active {
   color: #ffffff;
   opacity: 1;
 }
 
-.pets__button--active:hover {
+.pets__tab--active:hover {
   color: #ffffff;
   opacity: 1;
 }

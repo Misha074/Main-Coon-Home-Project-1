@@ -48,14 +48,9 @@ function showSlides() {
   })
 }
 
-// function marginZero() {
-//   petsSliderSlides.forEach((el) => el.style.marginLeft = 0 + 'px');
-//   petsSliderSlides.forEach((el) => el.style.marginRight = 0 + 'px');
-// }
-
 function init() {
   hideExcessSlides();
-  // marginZero();
+
   showSlides();
 
   screenWidth = window.innerWidth;
@@ -110,11 +105,7 @@ function rollslider() {
   document.querySelector('.pets-slider__block--active').style.transform = 'translate(-' + count * width + 'px)';
 }
 
-function hideFemaleAndKittensBlock() {
-  blockMale.classList.add('pets-slider__block--active');
-  blockFemale.classList.add('pets-slider__block--inactive');
-  blockKittens.classList.add('pets-slider__block--inactive');
-}
+
 
 function showMaleBlock() {
   count = 0;
@@ -166,5 +157,14 @@ buttonMale.addEventListener('click', showMaleBlock);
 buttonFemale.addEventListener('click', showFemaleBlock);
 buttonKittens.addEventListener('click', showKittensBlock);
 
-hideFemaleAndKittensBlock();
+
 init();
+
+
+// function hideFemaleAndKittensBlock() {
+//   blockMale.classList.add('pets-slider__block--active');
+//   blockFemale.classList.add('pets-slider__block--inactive');
+//   blockKittens.classList.add('pets-slider__block--inactive');
+// }
+
+// hideFemaleAndKittensBlock();
