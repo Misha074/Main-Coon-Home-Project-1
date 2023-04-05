@@ -1,5 +1,5 @@
 let sliders = document.querySelectorAll('.slider');
-
+console.log(sliders);
 
 function initSlider() {
   sliders.forEach(el => {
