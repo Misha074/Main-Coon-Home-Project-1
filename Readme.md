@@ -1,7 +1,7 @@
-# Личный проект «Кэт энерджи»
+# Домашний проект «Питомник Мейн-Кунов»
 
 * Студент: [Михаил Петрушков](https://up.htmlacademy.ru/adaptive/26/user/1828133).
-* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
+* Наставник: [Дина Абрамова](https://htmlacademy.ru/profile/id1483099).
 
 ---
 

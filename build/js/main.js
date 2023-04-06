@@ -1,1 +1,0 @@
-import"./pets-tabs.js";import"./pets-slider-finish.js";import"./init-sliders.js";import"./faq-accordeon.js";
